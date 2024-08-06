@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : ven. 19 juil. 2024 à 16:06
+-- Généré le : mar. 06 août 2024 à 13:40
 -- Version du serveur : 8.0.30
 -- Version de PHP : 8.1.10
 
@@ -29,19 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id` int NOT NULL,
-  `prenom` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `nom` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `email` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `mdp` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `prenom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `mdp` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Déchargement des données de la table `users`
---
-
-INSERT INTO `users` (`id`, `prenom`, `nom`, `email`, `mdp`, `created_at`) VALUES
-(17, 'Demba', 'Faye', 'fayecodeur99@gmail.com', '$argon2id$v=19$m=65536,t=4,p=1$VU51VHZKT2tlcjZScGhsYg$qausHIdUzA2Ao9PU/1uHC67gEmsQpEewlVZUt9w2JOw', '2024-07-19 12:55:22');
 
 --
 -- Index pour les tables déchargées
@@ -61,7 +54,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
