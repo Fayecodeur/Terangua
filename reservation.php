@@ -78,16 +78,16 @@ if (isset($_POST["book_table"])) {
             $mail->isSMTP();                                            // Utiliser SMTP
             $mail->SMTPAuth   = true;                                   // Activer l'authentification SMTP
             $mail->Host       = 'smtp.gmail.com';                       // Définir le serveur SMTP
-            $mail->Username   = 'fayecodeur99@gmail.com';               // Nom d'utilisateur SMTP
-            $mail->Password   = 'yyhwokqvhgfxhtfh';                     // Mot de passe SMTP
+            $mail->Username   = 'votre_email';               // Nom d'utilisateur SMTP
+            $mail->Password   = 'votre_mot_de_passe';                     // Mot de passe SMTP
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;          // Activer le cryptage STARTTLS
             $mail->Port       = 587;                                    // Port TCP à utiliser
             // Définir l'encodage
             $mail->CharSet = 'UTF-8';                                   // Définir l'encodage à UTF-8
 
             // Destinataires
-            $mail->setFrom('fayecodeur99@gmail.com', 'Térangua Délice');
-            $mail->addAddress('fayecodeur99@gmail.com', 'Térangua Délice'); // Ajouter un destinataire
+            $mail->setFrom('votre_email', 'Térangua Délice');
+            $mail->addAddress('votre_email', 'Térangua Délice'); // Ajouter un destinataire
 
             // Contenu
             $mail->isHTML(true);                                  // Définir le format de l'email en HTML
