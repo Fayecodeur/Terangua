@@ -2,7 +2,7 @@
 session_start();
 $titre = "Térangua";
 
-require_once("includes/navbar.php");
+require_once("assets/includes/navbar.php");
 ?>
 <section class="main-banner" id="home">
   <div class="sec-wp">
@@ -36,6 +36,7 @@ require_once("includes/navbar.php");
   </div>
 </section>
 
+<!-- A propos -->
 <section class="about-sec section" id="about">
   <div class="container">
     <div class="row">
@@ -67,8 +68,32 @@ require_once("includes/navbar.php");
             <a href="https://youtu.be/BzmEjhspu3s?si=zFbtFHY06yTEXx5p" data-fancybox="video" class="play-btn">
               <i class="uil uil-play"></i>
             </a>
-            <span>Regarder la recette</span>
+            <span>Voir la recette</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="two-col-sec section bg-white" id="service">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="sec-img mt-5">
+          <img src="assets/images/background/thieb_bou_khonk.jpg" class="rounded" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="sec-text">
+          <h2 class="xxl-title">Nos services</h2>
+          <p>
+            Chez Térangue Délice, nous vous offrons une expérience culinaire exceptionnelle avec des plats sénégalais authentiques et savoureux. Notre restaurant vous accueille dans une ambiance chaleureuse et conviviale.
+          </p>
+          <p>
+            Pour votre confort, nous proposons un service de réservation en ligne, vous permettant de réserver facilement votre table et de profiter pleinement de votre repas.
+          </p>
         </div>
       </div>
     </div>
@@ -89,7 +114,7 @@ require_once("includes/navbar.php");
       <div class="row">
         <div class="col-lg-12">
           <div class="sec-title text-center mb-5">
-            <p class="sec-sub-title mb-3">Résérvation</p>
+            <p class="sec-sub-title mb-3">Réservation</p>
             <div class="sec-title-shape mb-4">
               <img src="assets/images/title-shape.svg" alt="" />
             </div>
@@ -102,24 +127,25 @@ require_once("includes/navbar.php");
           <div class="col-lg-4">
             <div class="table-title text-center">
               <h3>Du lundi au Vendredi</h3>
-              <p>8:00 h - 22:00 h</p>
+              <p>8:00 h - 23:00 h</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="call-now text-center">
               <i class="uil uil-restaurant"></i>
-              <a href="reservation.php">Résérver une table</a>
+              <a href="reservation.php">Réserver une table</a>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="table-title text-center">
               <h3>Du samedi au Dimanche</h3>
-              <p>11:00 h - 00:00 h</p>
+              <p>9:00 h - 00:00 h</p>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Gallery plats -->
       <div class="row" id="gallery">
         <div class="col-lg-10 m-auto">
           <div class="book-table-img-slider" id="icon">
@@ -140,12 +166,6 @@ require_once("includes/navbar.php");
 
               <a href="assets/images/background/lakh2.jpeg" data-fancybox="table-slider" class="book-table-img back-img swiper-slide" style=" background-image: url(assets/images/background/lakh2.jpeg);"></a>
             </div>
-
-
-
-
-
-
             <div class="swiper-button-wp">
               <div class="swiper-button-prev swiper-button">
                 <i class="uil uil-angle-left"></i>
@@ -163,5 +183,5 @@ require_once("includes/navbar.php");
 </section>
 
 <?php
-require_once("includes/footer.php");
+require_once("assets/includes/footer.php");
 ?>

@@ -6,7 +6,7 @@ if (!isset($_SESSION["user"])) {
 }
 $titre = "Nos menu";
 
-require_once("includes/navbar.php");
+require_once("assets/includes/navbar.php");
 ?>
 <!-- MENU -->
 <section style="background-image: url(assets/images/menu-bg.png)" class="our-menu section bg-light repeat-img" id="menu">
@@ -17,8 +17,7 @@ require_once("includes/navbar.php");
           <div class="sec-title text-center mb-5">
             <p class="sec-sub-title mb-3">Nos menu</p>
             <h2 class="h2-title">
-              Découvrez l'authenticité de la cuisine sénégalaise à
-              travers <span>nos spécialités savoureuses.</span>
+              Découvrez nos spécialités savoureuses et authentiques de la <span>cuisine sénégalaise.</span>
             </h2>
             <div class="sec-title-shape mb-4">
               <img src="assets/images/title-shape.svg" alt="" />
@@ -57,6 +56,55 @@ require_once("includes/navbar.php");
         <div class="row g-xxl-5 bydefault_show" id="menu-dish">
           <!-- DEBUT PETIT DEJEUNER -->
 
+          <!-- Thiébou dieune -->
+          <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+            <div class="dish-box text-center">
+              <div class="dist-img">
+                <img src="assets/images/plats/thieb_khonk.jpg" alt="" />
+              </div>
+              <div class="dish-rating">
+                4
+                <i class="uil uil-star"></i>
+              </div>
+              <div class="dish-title">
+                <h3 class="h3-title">Thiébou dieune bou khonk</h3>
+              </div>
+
+              <div class="dist-bottom-row">
+                <ul>
+                  <li>
+                    <b>Prix : 3000 <span> &#8355;</span></b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Thiébou dieune -->
+          <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+            <div class="dish-box text-center">
+              <div class="dist-img">
+                <img src="assets/images/plats/thieb_wekh.jpg" alt="" />
+              </div>
+              <div class="dish-rating">
+                4
+                <i class="uil uil-star"></i>
+              </div>
+              <div class="dish-title">
+                <h3 class="h3-title">Thiébou dieune bou wékh</h3>
+              </div>
+
+              <div class="dist-bottom-row">
+                <ul>
+                  <li>
+                    <b>Prix : 3000 <span> &#8355;</span></b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <!-- sur le plats -->
           <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
             <div class="dish-box text-center">
@@ -74,6 +122,32 @@ require_once("includes/navbar.php");
                 <ul>
                   <li>
                     <b>Prix : 2000 <span> &#8355;</span></b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Yassa poulet -->
+          <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+            <div class="dish-box text-center">
+              <div class="dist-img">
+                <img src="assets/images/plats/yassa_poulet.jpg" alt="" />
+              </div>
+              <div class="dish-rating">
+                4
+                <i class="uil uil-star"></i>
+              </div>
+              <div class="dish-title">
+                <h3 class="h3-title">Yassa poulet</h3>
+              </div>
+
+              <div class="dist-bottom-row">
+                <ul>
+                  <li>
+                    <b>Prix : 4000 <span> &#8355;</span></b>
                   </li>
                 </ul>
               </div>
@@ -221,84 +295,14 @@ require_once("includes/navbar.php");
           </div>
 
 
-          <!-- FIN PETIT DEJEUNER -->
-          <!-- --------------------------------------------------------------------------------------- -->
+
 
 
 
           <!-- DEBUT DEJEUNER -->
 
-          <!-- Thiébou dieune -->
-          <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
-            <div class="dish-box text-center">
-              <div class="dist-img">
-                <img src="assets/images/plats/thieb_wekh.jpg" alt="" />
-              </div>
-              <div class="dish-rating">
-                4
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="dish-title">
-                <h3 class="h3-title">Thiébou dieune bou wékh</h3>
-              </div>
 
-              <div class="dist-bottom-row">
-                <ul>
-                  <li>
-                    <b>Prix : 3000 <span> &#8355;</span></b>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
-          <!-- Thiébou dieune -->
-          <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
-            <div class="dish-box text-center">
-              <div class="dist-img">
-                <img src="assets/images/plats/thieb_khonk.jpg" alt="" />
-              </div>
-              <div class="dish-rating">
-                4
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="dish-title">
-                <h3 class="h3-title">Thiébou dieune bou khonk</h3>
-              </div>
-
-              <div class="dist-bottom-row">
-                <ul>
-                  <li>
-                    <b>Prix : 3000 <span> &#8355;</span></b>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Yassa poulet -->
-          <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
-            <div class="dish-box text-center">
-              <div class="dist-img">
-                <img src="assets/images/plats/yassa_poulet.jpg" alt="" />
-              </div>
-              <div class="dish-rating">
-                4
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="dish-title">
-                <h3 class="h3-title">Yassa poulet</h3>
-              </div>
-
-              <div class="dist-bottom-row">
-                <ul>
-                  <li>
-                    <b>Prix : 4000 <span> &#8355;</span></b>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
 
           <!-- Thiébou yapp -->
@@ -634,5 +638,5 @@ require_once("includes/navbar.php");
 </section>
 
 <?php
-require_once("includes/footer.php");
+require_once("assets/includes/footer.php");
 ?>
